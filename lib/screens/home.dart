@@ -3,6 +3,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whatsapp/screens/chatscreen.dart';
 import 'package:whatsapp/widgets/chatcounter.dart';
 
 class Home extends StatefulWidget {
@@ -88,7 +89,7 @@ class _HomeState extends State<Home> {
         body: TabBarView(children: [
           Icon(Icons.flight, size: 350),
           Icon(Icons.directions_transit, size: 350),
-          Icon(Icons.directions_car, size: 350),
+          chatscreen(),
           Icon(Icons.flight, size: 350),
           Icon(Icons.directions_transit, size: 350),
         ]),
